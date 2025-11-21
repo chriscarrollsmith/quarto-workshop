@@ -1,0 +1,17 @@
+# Install Python
+
+## Install `uv`
+
+You don't actually even need to install Python anymore, because `uv` takes care of Python installation automatically. Follow instructions at <https://docs.astral.sh/uv/> to install `uv`.
+
+### MacOS/Linux/WSL
+
+``` bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+## Windows
+
+``` powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
