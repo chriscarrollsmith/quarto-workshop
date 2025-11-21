@@ -1,6 +1,6 @@
 {
   "name": "Quarto Workshop",
-  "image": "ghcr.io/quarto-dev/quarto-dev-containers/base:latest",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "username": "vscode"
@@ -22,6 +22,6 @@
       ]
     }
   },
-  "postCreateCommand": "quarto install tinytex && quarto check",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv tool install quarto && ~/.local/bin/quarto install tinytex && ~/.local/bin/quarto check",
   "remoteUser": "vscode"
 }
