@@ -1,7 +1,15 @@
-# Install LaTeX (optional)
+# Install Quarto
 
-If you want to render your document to PDF, you will need a typesetting engine called LaTeX. If you have Quarto installed, you can run the following command to install a minimal LaTeX distribution called TinyTeX:
+## Windows/MacOS/Linux/WSL
 
-```bash
-quarto install tinytex
+With `uv`:
+
+``` bash
+uv tool install quarto
 ```
+
+## Windows/MacOS only
+
+Download and run the installer from:
+
+<https://quarto.org/docs/get-started/>

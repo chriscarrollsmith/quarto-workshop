@@ -1,0 +1,26 @@
+# Plotting with Python
+
+You can also use Python for plotting. Quarto uses the Jupyter engine to execute Python code.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Ensure matplotlib and numpy are installed in your environment
+# e.g., pip install matplotlib numpy
+
+# Generate data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create plot
+plt.figure(figsize=(8, 4))
+plt.plot(x, y, label='sin(x)', color='red')
+plt.title('Simple Sine Wave')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+

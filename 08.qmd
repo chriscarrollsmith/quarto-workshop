@@ -1,9 +1,7 @@
-# Install VSCode (or Positron, or Cursor)
+# Install LaTeX (optional)
 
-## All operating systems
+If you want to render your document to PDF, you will need a typesetting engine called LaTeX. If you have Quarto installed, you can run the following command to install a minimal LaTeX distribution called TinyTeX:
 
-Follow instructions at <https://code.visualstudio.com/>.
-
-## Note for WSL users only
-
-WSL users should install in Windows, not in WSL. WSL will connect to the Windows VSCode installation via a "remote connection".
+```bash
+quarto install tinytex
+```

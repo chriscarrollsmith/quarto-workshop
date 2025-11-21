@@ -1,13 +1,10 @@
----
-title: "Quarto YAML headers"
-author: "Christopher C. Smith"
-format:
-  pdf    # or html, docx, etc.
----
+# Editor modes
 
-# Quarto YAML headers
+There are two editor modes for working with `.qmd` (Quarto Markdown) files in VSCode:
 
-Most Quarto documents start with a **YAML header** that controls metadata and output.
+- **Source mode**: This is the default mode. It lets you edit the document as a plain text file with mostly standard markdown syntax.
+- **Visual editor mode**: This mode lets you edit the document using a visual editor that provides a "what you see is what you get" interface for the document.
 
--   Available options documented here: <https://quarto.org/docs/reference/formats/opml.html>
--   The Quarto Extension for VSCode will give you tool tips and autocomplete for the YAML header.
+To switch modes, right-click in the document or search "Quarto: Edit" in the command palette ("View > Command Palette" or `ctrl + shift + P`).
+
+If editing with AI, you should use *source mode*. To see code output results rendered directly in the document as you work, you should use *visual editor mode*.

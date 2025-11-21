@@ -1,14 +1,11 @@
-# Install R (optional)
+# Skip the setup
 
-## Windows/MacOS
+![GitHub](workshop-qr.png)
 
-Download and install the installer from:
+To **skip all the installation steps for this workshop**, use a GitHub Codespace:
 
-<https://cloud.r-project.org/>
+- **1. Go to the repo**: <https://github.com/chriscarrollsmith/quarto-workshop>.
+- **2. Click the green “Code” button.**
+- **3. Select the “Codespaces” tab, then “Create codespace on main”.**
 
-## Linux/WSL
-
-``` bash
-sudo apt update
-sudo apt install r-base r-base-dev
-```
+GitHub will start a cloud dev environment with **Quarto, Python, R, and LaTeX pre-configured**. It might take a few minutes to start, because it's downloading and building all the dependencies from scratch.

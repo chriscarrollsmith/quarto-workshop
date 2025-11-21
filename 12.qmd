@@ -1,17 +1,13 @@
-# Render your document
+---
+title: "Quarto YAML headers"
+author: "Christopher C. Smith"
+format:
+  pdf    # or html, docx, etc.
+---
 
-## Rendering options
+# Quarto YAML headers
 
-- **Preview**: This will open a new pane with the rendered document.
-- **Render a single file**
-- **Render the project**: Renders all `.qmd` files in the current folder.
+Most Quarto documents start with a **YAML header** that controls metadata and output.
 
-## Rendering through the VSCode GUI
-
-Use `ctrl + shift + p` and search "Quarto: Render" or "Quarto: Preview", then select the desired option.
-
-## Rendering through the terminal
-
-- Render the project with `quarto render`.
-- Render a single file with `quarto render <filename>`.
-- Specify output format with the `--to <format>` option flag.
+-   Available options documented here: <https://quarto.org/docs/reference/formats/opml.html>
+-   The Quarto Extension for VSCode will give you tool tips and autocomplete for the YAML header.

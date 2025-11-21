@@ -1,15 +1,14 @@
-# Install Quarto
+# Install R (optional)
 
-## Windows/MacOS/Linux/WSL
+## Windows/MacOS
 
-With `uv`:
+Download and install the installer from:
+
+<https://cloud.r-project.org/>
+
+## Linux/WSL
 
 ``` bash
-uv tool install quarto
+sudo apt update
+sudo apt install r-base r-base-dev
 ```
-
-## Windows/MacOS only
-
-Download and run the installer from:
-
-<https://quarto.org/docs/get-started/>

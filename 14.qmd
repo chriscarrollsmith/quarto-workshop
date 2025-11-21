@@ -1,0 +1,11 @@
+# Plotting with R
+
+Quarto supports executable R code blocks. The output is rendered alongside the code.
+
+```{r}
+# Plot the 'cars' dataset
+plot(cars, main = "Stopping Distance vs Speed", 
+     xlab = "Speed (mph)", ylab = "Distance (ft)", 
+     col = "blue", pch = 19)
+```
+

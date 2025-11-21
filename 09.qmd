@@ -1,5 +1,9 @@
-# Install the Quarto VSCode extension
+# Install VSCode (or Positron, or Cursor)
 
-Open the "Extensions" tab and search for "Quarto", then click "Install".
+## All operating systems
 
-![](extensions.png)
+Follow instructions at <https://code.visualstudio.com/>.
+
+## Note for WSL users only
+
+WSL users should install in Windows, not in WSL. WSL will connect to the Windows VSCode installation via a "remote connection".

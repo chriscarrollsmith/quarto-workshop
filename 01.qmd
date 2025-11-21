@@ -3,3 +3,5 @@
 By Christopher C. Smith
 
 **Slides:** <https://github.com/chriscarrollsmith/quarto-workshop>
+
+![](workshop-qr.png){width="50%"}
