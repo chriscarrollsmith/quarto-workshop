@@ -11,4 +11,3 @@ Customize figure dimensions, captions, and alt text.
 
 plot(cars, pch = 19, col = "darkgreen")
 ```
-

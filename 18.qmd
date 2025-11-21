@@ -1,0 +1,21 @@
+---
+bibliography: references.bib
+---
+
+# Citations
+
+Quarto supports BibTeX citations.
+
+1.  Create a `.bib` file (e.g., `references.bib`).
+2.  Add `bibliography: references.bib` to YAML.
+3.  Cite using `@citation_key`.
+
+**Example:**
+
+This workshop is hosted on GitHub [@smith2025].
+For more on Quarto, see *R for Data Science* [@wickham2023].
+
+## References
+
+::: {#refs}
+:::
