@@ -1,0 +1,31 @@
+# Converting to a Book
+
+To render all files as a book, create a `_quarto.yml` file:
+
+```yaml
+project:
+  type: book
+
+book:
+  title: "Quarto Workshop"
+  author: "Chris"
+  chapters:
+    - 01.qmd
+    - 02.qmd
+    - 03.qmd
+    # ... list all files in desired order
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+```
+
+For full details on formatting a book, see <https://quarto.org/docs/books/>.
+
+Then render the book:
+
+```bash
+quarto render
+```

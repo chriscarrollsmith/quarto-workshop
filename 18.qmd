@@ -12,8 +12,7 @@ Quarto supports BibTeX citations.
 
 **Example:**
 
-This workshop is hosted on GitHub [@smith2025].
-For more on Quarto, see *R for Data Science* [@wickham2023].
+This workshop is hosted on GitHub [@smith2025]. For more on Quarto, see *R for Data Science* [@wickham2023].
 
 ## References
 

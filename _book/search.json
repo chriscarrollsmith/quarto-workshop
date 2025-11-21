@@ -1,0 +1,302 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Workshop",
+    "section": "",
+    "text": "1 Introduction to Quarto\nThis is a workshop on Quarto that will cover the basics of Quarto, including how to create a new Quarto project, how to write Quarto documents, and how to render Quarto documents.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Quarto Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "01.html",
+    "href": "01.html",
+    "title": "2  Introduction to Quarto",
+    "section": "",
+    "text": "By Christopher C. Smith\nSlides: https://github.com/chriscarrollsmith/quarto-workshop",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "02.html",
+    "href": "02.html",
+    "title": "3  Why Quarto? (part 1)",
+    "section": "",
+    "text": "Single source of truth: With Quarto, you can write a plain text (markdown) file that renders to many formats, including Word, PDF, or full HTML websites.\nReproducible: A researcher can write R and Python code directly in the source files, and the full analysis pipeline will automatically run and regenerate plots and tables on every render.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Why Quarto? (part 1)</span>"
+    ]
+  },
+  {
+    "objectID": "03.html",
+    "href": "03.html",
+    "title": "4  Why Quarto? (part 2)",
+    "section": "",
+    "text": "Traceable: Since markdown is super lightweight, you can check your code, results, and analysis into version control to see who made what changes and when (for instance for proving research provenance or tracing scientific misconduct).\nAI-friendly: Unlike Jupyter Notebooks, Quarto is really easy to edit with AI-powered tools (like Cursor, Cline, and Claude Code) because the source files are plain text.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Why Quarto? (part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "04.html",
+    "href": "04.html",
+    "title": "5  Skip the setup",
+    "section": "",
+    "text": "GitHub\n\n\nTo skip all the installation steps for this workshop, use a GitHub Codespace:\n\n1. Go to the repo: https://github.com/chriscarrollsmith/quarto-workshop.\n2. Click the green “Code” button.\n3. Select the “Codespaces” tab, then “Create codespace on main”.\n\nGitHub will start a cloud dev environment with Quarto, Python, R, and LaTeX pre-configured. It might take a few minutes to start, because it’s downloading and building all the dependencies from scratch.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Skip the setup</span>"
+    ]
+  },
+  {
+    "objectID": "05.html",
+    "href": "05.html",
+    "title": "6  Install Python",
+    "section": "",
+    "text": "6.1 Install uv\nYou don’t actually even need to install Python anymore, because uv takes care of Python installation automatically. Follow instructions at https://docs.astral.sh/uv/ to install uv:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Install Python</span>"
+    ]
+  },
+  {
+    "objectID": "05.html#install-uv",
+    "href": "05.html#install-uv",
+    "title": "6  Install Python",
+    "section": "",
+    "text": "6.1.1 MacOS/Linux/WSL\ncurl -LsSf https://astral.sh/uv/install.sh | sh\n\n\n6.1.2 Windows\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Install Python</span>"
+    ]
+  },
+  {
+    "objectID": "05.html#install-python-and-workshop-python-dependencies",
+    "href": "05.html#install-python-and-workshop-python-dependencies",
+    "title": "6  Install Python",
+    "section": "6.2 Install Python and workshop Python dependencies",
+    "text": "6.2 Install Python and workshop Python dependencies\nuv sync",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Install Python</span>"
+    ]
+  },
+  {
+    "objectID": "06.html",
+    "href": "06.html",
+    "title": "7  Install R (optional)",
+    "section": "",
+    "text": "7.1 Windows/MacOS\nDownload and install the installer from:\nhttps://cloud.r-project.org/",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install R (optional)</span>"
+    ]
+  },
+  {
+    "objectID": "06.html#linuxwsl",
+    "href": "06.html#linuxwsl",
+    "title": "7  Install R (optional)",
+    "section": "7.2 Linux/WSL",
+    "text": "7.2 Linux/WSL\nsudo apt update\nsudo apt install r-base r-base-dev",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install R (optional)</span>"
+    ]
+  },
+  {
+    "objectID": "07.html",
+    "href": "07.html",
+    "title": "8  Install Quarto",
+    "section": "",
+    "text": "8.1 Windows/MacOS/Linux/WSL\nWith uv:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Install Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "07.html#windowsmacoslinuxwsl",
+    "href": "07.html#windowsmacoslinuxwsl",
+    "title": "8  Install Quarto",
+    "section": "",
+    "text": "uv tool install quarto",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Install Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "07.html#windowsmacos-only",
+    "href": "07.html#windowsmacos-only",
+    "title": "8  Install Quarto",
+    "section": "8.2 Windows/MacOS only",
+    "text": "8.2 Windows/MacOS only\nDownload and run the installer from:\nhttps://quarto.org/docs/get-started/",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Install Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "08.html",
+    "href": "08.html",
+    "title": "9  Install LaTeX (optional)",
+    "section": "",
+    "text": "If you want to render your document to PDF, you will need a typesetting engine called LaTeX. If you have Quarto installed, you can run the following command to install a minimal LaTeX distribution called TinyTeX:\nquarto install tinytex",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Install LaTeX (optional)</span>"
+    ]
+  },
+  {
+    "objectID": "09.html",
+    "href": "09.html",
+    "title": "10  Install VSCode (or Positron, or Cursor)",
+    "section": "",
+    "text": "10.1 All operating systems\nFollow instructions at https://code.visualstudio.com/.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Install VSCode (or Positron, or Cursor)</span>"
+    ]
+  },
+  {
+    "objectID": "09.html#note-for-wsl-users-only",
+    "href": "09.html#note-for-wsl-users-only",
+    "title": "10  Install VSCode (or Positron, or Cursor)",
+    "section": "10.2 Note for WSL users only",
+    "text": "10.2 Note for WSL users only\nWSL users should install in Windows, not in WSL. WSL will connect to the Windows VSCode installation via a “remote connection”.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Install VSCode (or Positron, or Cursor)</span>"
+    ]
+  },
+  {
+    "objectID": "10.html",
+    "href": "10.html",
+    "title": "11  Install the Quarto VSCode extension",
+    "section": "",
+    "text": "Open the “Extensions” tab and search for “Quarto”, then click “Install”.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Install the Quarto VSCode extension</span>"
+    ]
+  },
+  {
+    "objectID": "11.html",
+    "href": "11.html",
+    "title": "12  Editor modes",
+    "section": "",
+    "text": "There are two editor modes for working with .qmd (Quarto Markdown) files in VSCode:\n\nSource mode: This is the default mode. It lets you edit the document as a plain text file with mostly standard markdown syntax.\nVisual editor mode: This mode lets you edit the document using a visual editor that provides a “what you see is what you get” interface for the document.\n\nTo switch modes, right-click in the document or search “Quarto: Edit” in the command palette (“View &gt; Command Palette” or ctrl + shift + P).\nIf editing with AI, you should use source mode.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Editor modes</span>"
+    ]
+  },
+  {
+    "objectID": "12.html",
+    "href": "12.html",
+    "title": "13  Quarto YAML headers",
+    "section": "",
+    "text": "14 Quarto YAML headers\nMost Quarto documents start with a YAML header that controls metadata and output.\n\nAvailable options documented here: https://quarto.org/docs/reference/formats/opml.html\nThe Quarto Extension for VSCode will give you tool tips and autocomplete for the YAML header.",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Quarto YAML headers</span>"
+    ]
+  },
+  {
+    "objectID": "13.html",
+    "href": "13.html",
+    "title": "14  Render your document",
+    "section": "",
+    "text": "14.1 Rendering options",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Render your document</span>"
+    ]
+  },
+  {
+    "objectID": "13.html#rendering-options",
+    "href": "13.html#rendering-options",
+    "title": "14  Render your document",
+    "section": "",
+    "text": "Preview: This will open a new pane with the rendered document.\nRender a single file\nRender the project: Renders all .qmd files in the current folder.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Render your document</span>"
+    ]
+  },
+  {
+    "objectID": "13.html#rendering-through-the-vscode-gui",
+    "href": "13.html#rendering-through-the-vscode-gui",
+    "title": "14  Render your document",
+    "section": "14.2 Rendering through the VSCode GUI",
+    "text": "14.2 Rendering through the VSCode GUI\nUse ctrl + shift + p and search “Quarto: Render” or “Quarto: Preview”, then select the desired option.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Render your document</span>"
+    ]
+  },
+  {
+    "objectID": "13.html#rendering-through-the-terminal",
+    "href": "13.html#rendering-through-the-terminal",
+    "title": "14  Render your document",
+    "section": "14.3 Rendering through the terminal",
+    "text": "14.3 Rendering through the terminal\n\nRender the project with quarto render.\nRender a single file with quarto render &lt;filename&gt;.\nSpecify output format with the --to &lt;format&gt; option flag.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Render your document</span>"
+    ]
+  },
+  {
+    "objectID": "14.html",
+    "href": "14.html",
+    "title": "15  Plotting with R",
+    "section": "",
+    "text": "Quarto supports executable R code blocks. The output is rendered alongside the code.\n\n# Plot the 'cars' dataset\nplot(cars, main = \"Stopping Distance vs Speed\", \n     xlab = \"Speed (mph)\", ylab = \"Distance (ft)\", \n     col = \"blue\", pch = 19)",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Plotting with R</span>"
+    ]
+  },
+  {
+    "objectID": "15.html",
+    "href": "15.html",
+    "title": "16  Plotting with Python",
+    "section": "",
+    "text": "You can also use Python for plotting. Quarto uses the Jupyter engine to execute Python code.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Ensure matplotlib and numpy are installed in your environment\n# e.g., pip install matplotlib numpy\n\n# Generate data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create plot\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, label='sin(x)', color='red')\nplt.title('Simple Sine Wave')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.grid(True)\nplt.show()",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Plotting with Python</span>"
+    ]
+  },
+  {
+    "objectID": "16.html",
+    "href": "16.html",
+    "title": "17  Execution Options",
+    "section": "",
+    "text": "Control code execution and display with cell options (lines starting with #|).\nThe main use case for code that’s evaluated but not echoed is to perform setup steps, as state is persisted across code blocks.\n\n# Access variable from previous block\nfrom IPython.display import Markdown\n\nrows = [f\"| `{k}` | {v} |\" for k, v in options.items()]\ntable = \"| Option | Description |\\n|---|---|\\n\" + \"\\n\".join(rows)\n\nMarkdown(table)\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk (true/false).\n\n\necho\nInclude source code in output (true/false/fenced).\n\n\noutput\nInclude results in output (true/false/asis).\n\n\nwarning\nInclude warnings in output (true/false).",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Execution Options</span>"
+    ]
+  },
+  {
+    "objectID": "17.html",
+    "href": "17.html",
+    "title": "18  Figure Options",
+    "section": "",
+    "text": "Customize figure dimensions, captions, and alt text.\n\nplot(cars, pch = 19, col = \"darkgreen\")\n\n\n\n\nStopping Distance vs Speed",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Figure Options</span>"
+    ]
+  },
+  {
+    "objectID": "18.html",
+    "href": "18.html",
+    "title": "19  Citations",
+    "section": "",
+    "text": "19.1 References\nQuarto supports BibTeX citations.\nExample:\nThis workshop is hosted on GitHub (Smith 2025). For more on Quarto, see R for Data Science (Wickham, Çetinkaya-Rundel, and Grolemund 2023).",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Citations</span>"
+    ]
+  },
+  {
+    "objectID": "18.html#references",
+    "href": "18.html#references",
+    "title": "19  Citations",
+    "section": "",
+    "text": "Smith, Christopher C. 2025. “Quarto Workshop.” GitHub\nrepository. https://github.com/chriscarrollsmith/quarto-workshop.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.\nR for Data Science. 2nd ed. O’Reilly Media. https://r4ds.hadley.nz/quarto.html.",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Citations</span>"
+    ]
+  },
+  {
+    "objectID": "19.html",
+    "href": "19.html",
+    "title": "20  Converting to a Book",
+    "section": "",
+    "text": "To render all files as a book, create a _quarto.yml file:\nproject:\n  type: book\n\nbook:\n  title: \"Quarto Workshop\"\n  author: \"Chris\"\n  chapters:\n    - 01.qmd\n    - 02.qmd\n    - 03.qmd\n    # ... list all files in desired order\n\nbibliography: references.bib\n\nformat:\n  html:\n    theme: cosmo\nThen render the book:\nquarto render",
+    "crumbs": [
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Converting to a Book</span>"
+    ]
+  }
+]

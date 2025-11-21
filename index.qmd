@@ -1,0 +1,8 @@
+---
+title: "Introduction to Quarto Workshop"
+author: "Christopher C. Smith"
+---
+
+# Introduction to Quarto
+
+This is a workshop on Quarto that will cover the basics of Quarto, including how to create a new Quarto project, how to write Quarto documents, and how to render Quarto documents.
