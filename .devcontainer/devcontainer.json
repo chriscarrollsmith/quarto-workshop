@@ -1,24 +1,32 @@
 {
-  "name": "Quarto Workshop",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "name": "Quarto Workshop (Rocker)",
+  "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "username": "vscode"
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "latest"
     },
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.12"
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode",
+      "installZsh": true,
+      "configureZshAsDefaultShell": true
     }
   },
   "customizations": {
     "vscode": {
+      "settings": {
+        "editor.wordWrap": "on",
+        "files.autoSave": "afterDelay",
+        "quarto.render.renderOnSave": true,
+        "r.plot.view": "httpgd"
+      },
       "extensions": [
         "quarto.quarto",
+        "reditorsupport.r",
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "reditorsupport.r"
+        "ms-python.vscode-pylance"
       ]
     }
   },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y r-base r-base-dev && curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv tool install quarto && ~/.local/bin/quarto install tinytex && ~/.local/bin/quarto check",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && export PATH=$HOME/.local/bin:$PATH && quarto install tinytex && quarto check && R -e 'install.packages(c(\"tidyverse\", \"here\", \"httpgd\", \"languageserver\"), repos=\"https://cran.rstudio.com/\")' && uv sync",
   "remoteUser": "vscode"
 }
