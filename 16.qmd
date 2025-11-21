@@ -1,0 +1,29 @@
+# Execution Options
+
+Control code execution and display with cell options (lines starting with `#|`).
+
+The main use case for code that's evaluated but not echoed is to perform setup steps, as state is persisted across code blocks.
+
+```{python}
+#| echo: false
+
+# Define dictionary in hidden block
+options = {
+    "eval": "Evaluate the code chunk (true/false).",
+    "echo": "Include source code in output (true/false/fenced).",
+    "output": "Include results in output (true/false/asis).",
+    "warning": "Include warnings in output (true/false)."
+}
+```
+
+```{python}
+#| echo: true
+
+# Access variable from previous block
+from IPython.display import Markdown
+
+rows = [f"| `{k}` | {v} |" for k, v in options.items()]
+table = "| Option | Description |\n|---|---|\n" + "\n".join(rows)
+
+Markdown(table)
+```

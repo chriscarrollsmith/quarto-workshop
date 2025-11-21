@@ -8,4 +8,3 @@ plot(cars, main = "Stopping Distance vs Speed",
      xlab = "Speed (mph)", ylab = "Distance (ft)", 
      col = "blue", pch = 19)
 ```
-

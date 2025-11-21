@@ -7,4 +7,4 @@ There are two editor modes for working with `.qmd` (Quarto Markdown) files in VS
 
 To switch modes, right-click in the document or search "Quarto: Edit" in the command palette ("View > Command Palette" or `ctrl + shift + P`).
 
-If editing with AI, you should use *source mode*. To see code output results rendered directly in the document as you work, you should use *visual editor mode*.
+If editing with AI, you should use *source mode*.

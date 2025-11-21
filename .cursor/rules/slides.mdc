@@ -2,3 +2,5 @@
 alwaysApply: true
 ---
 I am using the Quarto Visual Editor in VSCode as a presentation platform. Each document is a "slide". They should be in numerical presentation order and should be concise so they fit in a single window. I am not planning to render them, except a few for demonstration purposes. I will be toggling back and forth between source and visual editor modes as I present.
+
+Python code is run wuth `uv run`, in case that isn't obvious from the repo structure. Use `uv add` to add dependencies.

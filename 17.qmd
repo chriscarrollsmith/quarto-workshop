@@ -1,0 +1,14 @@
+# Figure Options
+
+Customize figure dimensions, captions, and alt text.
+
+```{r}
+#| fig-cap: "Stopping Distance vs Speed"
+#| fig-alt: "Scatter plot showing positive correlation between speed and stopping distance."
+#| fig-width: 6
+#| fig-height: 4
+#| echo: true
+
+plot(cars, pch = 19, col = "darkgreen")
+```
+

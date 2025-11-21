@@ -1,17 +1,11 @@
-# Install Python
+# Skip the setup
 
-## Install `uv`
+![GitHub](workshop-qr.png)
 
-You don't actually even need to install Python anymore, because `uv` takes care of Python installation automatically. Follow instructions at <https://docs.astral.sh/uv/> to install `uv`:
+To **skip all the installation steps for this workshop**, use a GitHub Codespace:
 
-### MacOS/Linux/WSL
+- **1. Go to the repo**: <https://github.com/chriscarrollsmith/quarto-workshop>.
+- **2. Click the green “Code” button.**
+- **3. Select the “Codespaces” tab, then “Create codespace on main”.**
 
-``` bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-## Windows
-
-``` powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
+GitHub will start a cloud dev environment with **Quarto, Python, R, and LaTeX pre-configured**. It might take a few minutes to start, because it's downloading and building all the dependencies from scratch.
