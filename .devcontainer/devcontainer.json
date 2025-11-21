@@ -7,9 +7,6 @@
     },
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.12"
-    },
-    "ghcr.io/devcontainers/features/r-lang:1": {
-      "installRadian": false
     }
   },
   "customizations": {
@@ -22,6 +19,6 @@
       ]
     }
   },
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv tool install quarto && ~/.local/bin/quarto install tinytex && ~/.local/bin/quarto check",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y r-base r-base-dev && curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv tool install quarto && ~/.local/bin/quarto install tinytex && ~/.local/bin/quarto check",
   "remoteUser": "vscode"
 }
