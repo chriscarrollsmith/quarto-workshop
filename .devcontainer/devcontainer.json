@@ -30,6 +30,6 @@
       ]
     }
   },
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && export PATH=$HOME/.local/bin:$PATH && quarto install tinytex && quarto check && R -e 'install.packages(c(\"tidyverse\", \"here\", \"httpgd\", \"languageserver\"), repos=\"https://cran.rstudio.com/\")' && uv sync",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && export PATH=$HOME/.local/bin:$PATH && quarto install tinytex && quarto check && uv sync",
   "remoteUser": "vscode"
 }
