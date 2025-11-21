@@ -1,3 +1,5 @@
 # Introduction to Quarto
 
 By Christopher C. Smith
+
+**Slides:** <https://github.com/chriscarrollsmith/quarto-workshop>

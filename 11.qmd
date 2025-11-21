@@ -1,0 +1,13 @@
+---
+title: "Quarto YAML headers"
+author: "Christopher C. Smith"
+format:
+  pdf    # or html, docx, etc.
+---
+
+# Quarto YAML headers
+
+Most Quarto documents start with a **YAML header** that controls metadata and output.
+
+-   Available options documented here: <https://quarto.org/docs/reference/formats/opml.html>
+-   The Quarto Extension for VSCode will give you tool tips and autocomplete for the YAML header.

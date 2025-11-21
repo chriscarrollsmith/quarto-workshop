@@ -1,0 +1,5 @@
+# Install the Quarto VSCode extension
+
+Open the "Extensions" tab and search for "Quarto", then click "Install".
+
+![](extensions.png)

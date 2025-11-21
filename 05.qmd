@@ -1,0 +1,14 @@
+# Install R (optional)
+
+## Windows/MacOS
+
+Download and install the installer from:
+
+<https://cloud.r-project.org/>
+
+## Linux/WSL
+
+``` bash
+sudo apt update
+sudo apt install r-base r-base-dev
+```

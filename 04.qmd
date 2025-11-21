@@ -1,15 +1,17 @@
-# Install Quarto
+# Install Python
 
-## Windows/MacOS
+## Install `uv`
 
-Download and run the installer from:
+You don't actually even need to install Python anymore, because `uv` takes care of Python installation automatically. Follow instructions at <https://docs.astral.sh/uv/> to install `uv`:
 
-<https://quarto.org/docs/get-started/>
-
-## Linux/WSL
-
-With `uv`:
+### MacOS/Linux/WSL
 
 ``` bash
-uv tool install quarto
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+## Windows
+
+``` powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```

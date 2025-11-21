@@ -1,0 +1,17 @@
+# Render your document
+
+## Rendering options
+
+- **Preview**: This will open a new pane with the rendered document.
+- **Render a single file**
+- **Render the project**: Renders all `.qmd` files in the current folder.
+
+## Rendering through the VSCode GUI
+
+Use `ctrl + shift + p` and search "Quarto: Render" or "Quarto: Preview", then select the desired option.
+
+## Rendering through the terminal
+
+- Render the project with `quarto render`.
+- Render a single file with `quarto render <filename>`.
+- Specify output format with the `--to <format>` option flag.

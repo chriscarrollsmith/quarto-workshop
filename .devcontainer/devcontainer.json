@@ -1,0 +1,27 @@
+{
+  "name": "Quarto Workshop",
+  "image": "ghcr.io/quarto-dev/quarto-dev-containers/base:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12"
+    },
+    "ghcr.io/devcontainers/features/r-lang:1": {
+      "installRadian": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "quarto.quarto",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "reditorsupport.r"
+      ]
+    }
+  },
+  "postCreateCommand": "quarto install tinytex && quarto check",
+  "remoteUser": "vscode"
+}

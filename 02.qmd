@@ -1,17 +1,4 @@
-# Install Python
+# Why Quarto? (part 1)
 
-## Install `uv`
-
-You don't actually even need to install Python anymore, because `uv` takes care of Python installation automatically. Follow instructions at <https://docs.astral.sh/uv/> to install `uv`.
-
-### MacOS/Linux/WSL
-
-``` bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-## Windows
-
-``` powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
+- **Single source of truth**: With Quarto, you can write a *plain text (markdown) file* that renders to many formats, including Word, PDF, or full HTML websites.
+- **Reproducible**: A researcher can write R and Python code directly in the source files, and the full analysis pipeline will automatically run and regenerate plots and tables on every render.

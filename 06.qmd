@@ -1,0 +1,15 @@
+# Install Quarto
+
+## Windows/MacOS/Linux/WSL
+
+With `uv`:
+
+``` bash
+uv tool install quarto
+```
+
+## Windows/MacOS only
+
+Download and run the installer from:
+
+<https://quarto.org/docs/get-started/>

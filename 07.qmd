@@ -1,0 +1,7 @@
+# Install LaTeX (optional)
+
+If you want to render your document to PDF, you will need a typesetting engine called LaTeX. If you have Quarto installed, you can run the following command to install a minimal LaTeX distribution called TinyTeX:
+
+```bash
+quarto install tinytex
+```

@@ -1,14 +1,4 @@
-# Install R (optional)
+# Why Quarto? (part 2)
 
-## Windows/MacOS
-
-Download and install the installer from:
-
-<https://cloud.r-project.org/>
-
-## Linux/WSL
-
-``` bash
-sudo apt update
-sudo apt install r-base r-base-dev
-```
+- **Traceable**: Since markdown is super lightweight, you can check your code, results, and analysis into version control to see who made what changes and when (for instance for proving research provenance or tracing scientific misconduct).
+- **AI-friendly**: Unlike Jupyter Notebooks, Quarto is really easy to edit with AI-powered tools (like Cursor, Cline, and Claude Code) because the source files are plain text.
